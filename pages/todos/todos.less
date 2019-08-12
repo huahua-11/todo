@@ -1,0 +1,73 @@
+.container {
+  border-top: 1rpx solid #e0e0e0;
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin: 20rpx;
+    padding: 20rpx;
+    border: 1rpx solid #e0e0e0;
+    border-radius: 5rpx;
+    box-shadow: 0 0 5rpx #e0e0e0;
+
+      image {
+      width: 40rpx;
+      height: 40rpx;
+      margin-right: 20rpx;
+    }
+  }
+
+  .todo-list{
+    margin: 20rpx;
+    border: 1rpx solid #e0e0e0;
+    border-radius: 5rpx;
+    box-shadow: 0 0 5rpx #e0e0e0;
+  
+    .todo-item{
+       display: flex;
+       align-items: center;
+       padding: 20rpx;
+       border-bottom: 1rpx solid #e0e0e0;
+       justify-content: space-between;
+       &:last-child {
+        border-bottom: none;
+      }
+  
+       .todo-icon{
+         display: flex;
+         align-items: center;
+        
+          text{
+            flex: 1;
+            margin-left: 20rpx;
+            font-size: 30rpx;
+            color: #444;
+            overflow: hidden;
+          }
+
+          // 是否添加删除线
+          text.completed{
+            color: #888;
+            text-decoration: line-through;
+          }
+       }
+
+  
+  }
+ 
+}
+ 
+// 底部
+.footer{
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 24rpx;
+  padding: 0 20rpx;
+}
+  
+} 
+
+
+
+

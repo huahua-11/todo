@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/todos/todos",
+    "pages/index/index",
+    
+   "pages/inputs/input",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#9400ff",
+    "navigationBarTitleText": "武功秘籍😊",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+		"color": "#ccc",
+		"selectedColor": "#fff",
+		"backgroundColor": "#940047",
+		"position": "bottom",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "icons/_home.png",
+				"selectedIconPath": "icons/home.png"
+      },
+      {
+				"pagePath": "pages/todos/todos",
+				"text": "表格",
+				"iconPath": "icons/_home.png",
+				"selectedIconPath": "icons/home.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+				"text": "登录",
+				"iconPath": "icons/_videocamera.png",
+				"selectedIconPath": "icons/videocamera.png"
+      }
+		]
+	}
+}

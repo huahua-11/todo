@@ -1,0 +1,55 @@
+.container {
+  border-top: 1rpx solid #e0e0e0;
+}
+.container .header {
+  display: flex;
+  align-items: center;
+  margin: 20rpx;
+  padding: 20rpx;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 5rpx;
+  box-shadow: 0 0 5rpx #e0e0e0;
+}
+.container .header image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.container .todo-list {
+  margin: 20rpx;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 5rpx;
+  box-shadow: 0 0 5rpx #e0e0e0;
+}
+.container .todo-list .todo-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+  justify-content: space-between;
+}
+.container .todo-list .todo-item:last-child {
+  border-bottom: none;
+}
+.container .todo-list .todo-item .todo-icon {
+  display: flex;
+  align-items: center;
+}
+.container .todo-list .todo-item .todo-icon text {
+  flex: 1;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: #444;
+  overflow: hidden;
+}
+.container .todo-list .todo-item .todo-icon text.completed {
+  color: #888;
+  text-decoration: line-through;
+}
+.container .footer {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 24rpx;
+  padding: 0 20rpx;
+}

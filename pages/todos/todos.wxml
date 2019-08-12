@@ -1,0 +1,30 @@
+
+<view class="container">
+<!-- 标题 -->
+ <view class='header'>
+      <image src='/icons/_home.png' bindtap="addListValue" data-value="{{InputValue}}"></image>
+      <input type="text" placeholder='Anything here' bindinput="handleInput" value="{{value}}" ></input>
+  </view>
+  
+<!-- 记录列表 -->
+   <view class="todo-list" >
+      <view class="todo-item" wx:for="{{ todos }}" wx:key="{{ index }}">
+        <view class="todo-icon" >
+           <icon type='{{item.completed?"success":"circle"}}' bindtap="changeCompleted" data-index="{{index}}"></icon>
+           <text class='{{item.completed?"completed":""}}'>{{item.value}}</text>   
+        </view>
+        <!-- 删除 -->
+          <icon size="16" type="clear" bindtap="delteOnceValue"  data-index="{{ index }}"></icon>       
+      </view>  
+     
+   </view>
+
+   <!-- 底部 -->
+   <view class='footer' wx:if="{{todos.length}}">
+      <text bindtap="changeAllCompleted">Toggle all</text>
+      <text>{{list}} items lift</text>
+      <text bindtap="clearAllCompleted">clear completed</text>
+    </view>
+      
+</view>
+
